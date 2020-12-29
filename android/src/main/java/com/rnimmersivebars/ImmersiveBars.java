@@ -110,8 +110,8 @@ public class ImmersiveBars {
                 int translucentDarkColor;
                 if (translucentDarkStr.isEmpty()) {
                     translucentDarkColor = Color.TRANSPARENT;
-                } else if (translucentDarkColor.equals("transparent")) {
-                    translucentLightranslucentDarkColortColor = Color.TRANSPARENT;
+                } else if (translucentDarkStr.equals("transparent")) {
+                    translucentDarkColor = Color.TRANSPARENT;
                 } else {
                     translucentDarkColor = Color.parseColor(translucentDarkStr);
                 }
