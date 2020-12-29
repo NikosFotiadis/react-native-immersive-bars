@@ -70,14 +70,7 @@ public class ImmersiveBars {
                     window.setStatusBarColor(isDarkMode ? translucentDarkColor : translucentLightColor);
                 }
 
-                if (shouldUseTransparentNavBar) {
-                    window.setNavigationBarColor(Color.TRANSPARENT);
-                    if (!isDarkMode) {
-                        flags |= View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
-                    }
-                } else {
-                    window.setNavigationBarColor(isDarkMode ? translucentDarkColor: translucentLightColor);
-                }
+                window.setNavigationBarColor(isDarkMode ? translucentDarkColor: translucentLightColor);
 
                 window.getDecorView().setSystemUiVisibility(flags);
             }
