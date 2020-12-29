@@ -1,3 +1,4 @@
 const changeBarColors = () => {};
+const setTranslucentBarColor = () => {};
 
-export { changeBarColors };
+export { changeBarColors, setTranslucentBarColor };

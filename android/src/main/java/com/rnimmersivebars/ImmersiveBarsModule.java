@@ -40,4 +40,14 @@ public class ImmersiveBarsModule extends ReactContextBaseJavaModule {
                 translucentDarkStr
         );
     }
+
+    @ReactMethod
+    public void setTranslucentBarColor(final Boolean isDarkMode, final String translucentLightStr, final String translucentDarkStr) {
+        ImmersiveBars.setTranslucentBarColor(
+                getCurrentActivity(),
+                isDarkMode,
+                translucentLightStr,
+                translucentDarkStr
+        );
+    }
 }

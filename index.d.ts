@@ -4,4 +4,10 @@ declare module "react-native-immersive-bars" {
         translucentLightStr?: string,
         translucentDarkStr?: string
     ): void;
+
+    export function setTranslucentBarColor(
+        isDarkMode: boolean,
+        translucentLightStr?: string,
+        translucentDarkStr?: string
+    ): void;
 }

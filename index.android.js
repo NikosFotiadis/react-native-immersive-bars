@@ -10,4 +10,12 @@ const changeBarColors = (
     ImmersiveBars.changeBarColors(isDarkMode, translucentLightStr, translucentDarkStr);
 };
 
-export { changeBarColors };
+const setTranslucentBarColor = (
+    isDarkMode = false,
+    translucentLightStr = "",
+    translucentDarkStr = "",
+) => {
+    ImmersiveBars.setTranslucentBarColor(isDarkMode, translucentLightStr, translucentDarkStr);
+};
+
+export { changeBarColors, setTranslucentBarColor };
