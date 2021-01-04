@@ -120,6 +120,10 @@ public class ImmersiveBars {
                 // Both flags were added in Level 16
                 int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
 
+                if (!isDarkMode) {
+                    flags |= View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
+                }
+
                 window.setNavigationBarColor(isDarkMode ? translucentDarkColor: translucentLightColor);
 
                 window.getDecorView().setSystemUiVisibility(flags);

@@ -3,7 +3,7 @@
 </h1>
 <div align="center">
 
-[![Our npm path](https://badgen.net/npm/v/react-native-immersive-bars)](https://www.npmjs.com/package/react-native-immersive-bars/)
+[![Our npm path](https://badgen.net/npm/v/@nikosfotiadis/react-native-immersive-bars)](https://www.npmjs.com/package/@nikosfotiadis/react-native-immersive-bars)
 
 </div>
 
@@ -15,7 +15,7 @@
 
 </div>
 
-> Do you like the button slider that changes from light to dark mode? [That's another package that I've built: `react-native-button-toggle-group`](https://github.com/crutchcorn/react-native-button-toggle-group)
+> Do you like the button slider that changes from light to dark mode? [That's another package: `react-native-button-toggle-group`](https://github.com/crutchcorn/react-native-button-toggle-group)
 
 [Google officially suggests apps that target Q or higher to render content under the statusbar and navbar](http://youtube.com/watch?v=Nf-fP2u9vjI).
 However, [doing so previously was difficult to do and required some customization and tweaking](https://unicorn-utterances.com/posts/draw-under-navbar-using-react-native/). Not to mention the variant support for other APIs.
