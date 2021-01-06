@@ -1,4 +1,4 @@
-import { NativeModules } from "react-native";
+import { NativeModules, Platform } from "react-native";
 
 const { ImmersiveBars } = NativeModules;
 
@@ -7,7 +7,9 @@ const changeBarColors = (
     translucentLightStr = "",
     translucentDarkStr = "",
 ) => {
-    ImmersiveBars.changeBarColors(isDarkMode, translucentLightStr, translucentDarkStr);
+    if(Platform.OS === 'android'){
+        ImmersiveBars.changeBarColors(isDarkMode, translucentLightStr, translucentDarkStr);
+    }
 };
 
 const setTranslucentBarColor = (
@@ -15,7 +17,9 @@ const setTranslucentBarColor = (
     translucentLightStr = "",
     translucentDarkStr = "",
 ) => {
-    ImmersiveBars.setTranslucentBarColor(isDarkMode, translucentLightStr, translucentDarkStr);
+    if(Platform.OS === 'android'){
+        ImmersiveBars.setTranslucentBarColor(isDarkMode, translucentLightStr, translucentDarkStr);
+    }
 };
 
 export { changeBarColors, setTranslucentBarColor };
